@@ -1,0 +1,158 @@
+.container {
+    padding: 0 20px;
+}
+
+.data-input {
+    position: relative;
+    padding: 10px 0 25px;
+    border-bottom: 1px solid #808080;
+}
+
+.data-input__title,
+.data-input__description,
+.data-input__label {
+    display: block;
+}
+
+.data-input__file {
+    display: none;
+}
+
+.title {
+    padding: 5px 0;
+    text-align: center;
+    background-color: #808080;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.5;
+    letter-spacing: 0.5px;
+}
+
+.data-input__label {
+    margin-bottom: 10px;
+}
+
+.data-input__title,
+.data-input__description {
+    width: 100%;
+    padding: 4px;
+    font-size: 14px;
+    line-height: 1.2;
+    letter-spacing: 0.5px;
+}
+
+.data-input__description {
+    height: 170px;
+    overflow-y: auto;
+    resize: none;
+}
+
+.data-input__label-wrapper {
+    display: flex;
+    align-items: center;
+    margin-bottom: 25px;
+    padding-top: 7px;
+}
+
+.data-input__label--file {
+    background-color: #dddddd;
+    border: 1px solid #a0a0a0;
+    padding: 7px;
+    font-size: 13px;
+    text-align: center;
+    line-height: 1;
+    cursor: pointer;
+    margin-right: 20px;
+    margin-bottom: 0px;
+}
+
+.data-input__label--file:hover {
+    border-color: #808080;
+}
+
+.data-input__label--file:active {
+    border-color: #a0a0a0;
+}
+
+.data-input__file-value {
+    font-size: 13px;
+    cursor: default;
+}
+
+.data-input__submit {
+    padding: 7px;
+    cursor: pointer;
+    margin-right: 20px;
+}
+
+.message {
+    position: absolute;
+    display: inline-block;
+    right: 10px;
+    font-size: 14px;
+    cursor: default;
+}
+
+/* data-output */
+
+.data-output {
+    padding: 25px 0;
+}
+
+.data-output__item {
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 8px 0 rgba(34, 34, 37, 0.1);
+    margin-bottom: 25px;
+}
+
+.data-output__content {
+    display: flex;
+    flex-direction: column;
+}
+
+.data-output__title {
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 18px;
+    line-height: 1;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+
+.data-output__description {
+    padding: 20px 0;
+    text-align: justify;
+    font-size: 15px;
+}
+
+.data-output__button {
+    padding: 7px;
+    cursor: pointer;
+}
+
+.data-output__button--get-data {
+    margin-bottom: 25px;
+}
+
+.data-output__image {
+    width: 100px;
+    border-radius: 3px;
+}
+
+@media only screen and (min-width : 768px) {
+    .container {
+        width: 768px;
+        margin: 0 auto;
+    }
+
+    .data-output__content {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    .data-output__description {
+        flex-grow: 1;
+        padding: 0 20px;
+    }
+}
